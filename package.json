@@ -29,6 +29,9 @@
         "vite": "^5.0.3"
     },
     "dependencies": {
-        "@sveltejs/adapter-static": "^3.0.6"
+        "@sveltejs/adapter-static": "^3.0.6",
+        "katex": "^0.16.11",
+        "marked": "^15.0.1",
+        "marked-katex-extension": "5.1.2"
     }
 }

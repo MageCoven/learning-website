@@ -1,0 +1,25 @@
+{
+    "name": "Calculus 1",
+    "cards": [
+        {
+            "question": "# Definitionen av kontinuitet i en punkt",
+            "answer": "Låt $f$ vara en funktion definerad på $(a, b)$ och låt $c \\in (a, b)$. Då säger vi att $f$ är kontinuerlig i punkten $c$ om följande gränsvärde finns:\n\n$$\n\\lim_{x \\to c} f(x) = f(c)\n$$\n\nOm detta inte gäller säger vi att $f$ är diskontinuerlig i punkten $c$."
+        },
+        {
+            "question": "# Definitionen av högerkontinuitet",
+            "answer": "Låt $f$ vara en funktion definerad på $(a, b)$ och låt $c \\in (a, b)$. Då säger vi att $f$ är högerkontinuerlig i punkten $c$ om följande gränsvärde finns:\n\n$$\n\\lim_{x \\to c^+} f(x) = f(c)\n$$"
+        },
+        {
+            "question": "# Definitionen av vänsterkontinuitet",
+            "answer": "Låt $f$ vara en funktion definerad på $(a, b)$ och låt $c \\in (a, b)$. Då säger vi att $f$ är vänsterkontinuerlig i punkten $c$ om följande gränsvärde finns:\n\n$$\n\\lim_{x \\to c^-} f(x) = f(c)\n$$"
+        },
+        {
+            "question": "# Definitionen av kontinuitet",
+            "answer": "En funktion $f$ är kontinuerlig på $[a, b]$ om:\n\n1. $f$ är kontinuerlig i varje punkt $c \\in (a, b)$\n2. $f$ är högerkontinuerlig i punkten $a$\n3. $f$ är vänsterkontinuerlig i punkten $b$"
+        },
+        {
+            "question": "# Definitionen av gränsvärde",
+            "answer": "Låt $f$ vara en funktion definerad på $(a, b)$, förutom möjligtvis en punkt $c \\in (a, b)$. Om för varje $\\varepsilon \\gt 0$ finns ett tal $\\delta \\gt 0$ sådant att\n\n$$\n0 \\lt |x - c| \\lt \\delta \\implies |f(x) - L| \\lt \\varepsilon\n$$\n\nDå säger vi att gränsvärdet av $f$ är $L$ när $x$ går mot $c$ och vi skriver\n\n$$\n\\lim_{x \\to c} f(x) = L\n$$"
+        }
+    ]
+}
