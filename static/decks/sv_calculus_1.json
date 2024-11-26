@@ -1,5 +1,7 @@
 {
-    "name": "Calculus 1",
+    "name": "Envariableanalys 1",
+    "group": "calculus",
+    "languageCode": "sv",
     "cards": [
         {
             "question": "# Definitionen av kontinuitet i en punkt",

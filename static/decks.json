@@ -1,0 +1,18 @@
+{
+    "groups": {
+        "calculus": {
+            "name": {
+                "en": "Calculus",
+                "sv": "Calculus"
+            },
+            "decks": [
+                {
+                    "name": "Envariableanalys 1",
+                    "url": "/decks/sv_calculus_1.json",
+                    "languageCode": "sv",
+                    "numberOfCards": 5
+                }
+            ]
+        }
+    }
+}
