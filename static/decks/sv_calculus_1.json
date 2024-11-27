@@ -8,20 +8,44 @@
             "answer": "Låt $f$ vara en funktion definerad på $(a, b)$ och låt $c \\in (a, b)$. Då säger vi att $f$ är kontinuerlig i punkten $c$ om följande gränsvärde finns:\n\n$$\n\\lim_{x \\to c} f(x) = f(c)\n$$\n\nOm detta inte gäller säger vi att $f$ är diskontinuerlig i punkten $c$."
         },
         {
-            "question": "# Definitionen av högerkontinuitet",
-            "answer": "Låt $f$ vara en funktion definerad på $(a, b)$ och låt $c \\in (a, b)$. Då säger vi att $f$ är högerkontinuerlig i punkten $c$ om följande gränsvärde finns:\n\n$$\n\\lim_{x \\to c^+} f(x) = f(c)\n$$"
-        },
-        {
-            "question": "# Definitionen av vänsterkontinuitet",
-            "answer": "Låt $f$ vara en funktion definerad på $(a, b)$ och låt $c \\in (a, b)$. Då säger vi att $f$ är vänsterkontinuerlig i punkten $c$ om följande gränsvärde finns:\n\n$$\n\\lim_{x \\to c^-} f(x) = f(c)\n$$"
-        },
-        {
-            "question": "# Definitionen av kontinuitet",
-            "answer": "En funktion $f$ är kontinuerlig på $[a, b]$ om:\n\n1. $f$ är kontinuerlig i varje punkt $c \\in (a, b)$\n2. $f$ är högerkontinuerlig i punkten $a$\n3. $f$ är vänsterkontinuerlig i punkten $b$"
+            "question": "# Definitionen av höger och vänsterkontinuitet",
+            "answer": "Högerkontinuitet; låt $f$ vara en funktion definerad på $(a, b)$ och låt $c \\in (a, b)$. Då säger vi att $f$ är högerkontinuerlig i punkten $c$ om följande gränsvärde finns:\n\n$$\n\\lim_{x \\to c^+} f(x) = f(c)\n$$\n\nVänsterkontinuitiet; låt $f$ vara en funktion definerad på $(a, b)$ och låt $c \\in (a, b)$. Då säger vi att $f$ är vänsterkontinuerlig i punkten $c$ om följande gränsvärde finns:\n\n$$\n\\lim_{x \\to c^-} f(x) = f(c)\n$$"
         },
         {
             "question": "# Definitionen av gränsvärde",
             "answer": "Låt $f$ vara en funktion definerad på $(a, b)$, förutom möjligtvis en punkt $c \\in (a, b)$. Om för varje $\\varepsilon \\gt 0$ finns ett tal $\\delta \\gt 0$ sådant att\n\n$$\n0 \\lt |x - c| \\lt \\delta \\implies |f(x) - L| \\lt \\varepsilon\n$$\n\nDå säger vi att gränsvärdet av $f$ är $L$ när $x$ går mot $c$ och vi skriver\n\n$$\n\\lim_{x \\to c} f(x) = L\n$$"
+        },
+        {
+            "question": "# Definitionen av instägninssatsen",
+            "answer": "Låt $f$, $g$ och $h$ vara funktioner definerade på $(a, b)$ och antag att\n\n$$\nf(x) \\leq g(x) \\leq h(x) \\text{ för alla } x \\in (a, b) \\setminus \\{c\\}\n$$\n\nAntag också att\n\n$$\n\\lim_{x \\to c} f(x) = \\lim_{x \\to c} h(x) = L \\text{ där } L \\text{ är ett nummer}\n$$\n\nDå gäller det att\n\n$$\n\\lim_{x \\to c} g(x) = L\n$$"
+        },
+        {
+            "question": "# Definitionen av deriverbarhet i en punkt",
+            "answer": "Låt $f$ vara en funktion definerad på ett interval $(a, b)$ och $c \\in (a, b)$. Funktionen $f$ kallas deriverbar i punkten $c$  om följande gränsvärde finns:\n\n$$\nf'(x) = lim_{x \\to c}\\left(\\frac{f(x) - f(c)}{x - c}\\right)\n$$"
+        },
+        {
+            "question": "# Produktregeln",
+            "answer": "$$\n(f \\times g)'(c) = f'(c)g(c) + f(c)g'(c)\n$$"
+        },
+        {
+            "question": "# Kedjeregeln",
+            "answer": "Om $f(u)$ är deriverbar i $u = g(x)$ och $g(x)$ är deriverbar i $x$, så är $f \\dot g = f(g(x))$ deriverbar i $x$ och\n\n$$\n(f \\dot g)'(x) = f'(g(x)) \\times g'(x)\n$$"
+        },
+        {
+            "question": "# Medelvärdessatsen",
+            "answer": "Antag att för en funktion som är kontinuerlig på $[a, b]$ och deriverbar på $(a, b)$. Då finns en punkt $c \\in (a, b)$ sådant att\n\n$$\nf'(c) = \\frac{f(a) - f(b)}{b - a}"
+        },
+        {
+            "question": "# Rolles sats",
+            "answer": "Låt $g$ vara en funktion som är kontinuerlig på $[a, b]$ och deriverbar på $(a, b)$, Om $g(a) = g(b)$ så finns ett $c \\in (a, b)$ sådabt att $g'(c) = 0$"
+        },
+        {
+            "question": "# Definitionen av växande och avtagande funktioner",
+            "answer": "Antag att $f$ är en funktion definerad på ett intervall $I$, med eller utan ändpunkter, vi säger att $f$ är:\n\n- **Växande på $I$** om $f(x_1) \\leq f(x_2)$\n\n- **Strängt växande på $I$** om $f(x_1) \\lt f(x_2)$\n\n- **Avtagande på $I$** om $f(x_1) \\geq f(x_2)$\n\n- **Strängt avtagande på $I$** om $f(x_1) \\gt f(x_2)$\n\nFör alla $x_1, x_2 \\in I$ där $x_1 \\lt x_2$."
+        },
+        {
+            "question": "# Taylors sats",
+            "answer": "Låt $f:[a, b] \\to \\mathbb{R}$ vara en funktion sådan att\n\n1. $(n+1)\\text{-derivatan}$, $f^{\\left(n + 1\\right)}$, finns på $(a, b)$\n\n2. $f$, $f'$, $\\ldots$, $f^{\\left(n\\right)}$ är kontinuerlig på $[a, b]$\n\nLåt $x_0 \\in (a, b)$ vara givet, för varje $x \\in (a, b)$ finns ett tal $S$ mellan $x$ och $x_0$ sådant att\n\n$$\nf(x) = \\underbrace{f(x_0) + f'(x_0)(x-x_0) + \\frac{f''(x_0)}{2!} \\times \\left(x - x_0\\right)^2 + \\ldots + \\frac{f^{\\left(n\\right)}(x_0)}{n!} \\times (x - x_0)^n}_{P_n(x)} + \\underbrace{\\frac{f^{\\left(n + 1\\right)}(S)}{(n + 1)!} \\times (x - x_0)^{\\left(n + 1\\right)}}_{E_n(x)}\n$$"
         }
     ]
 }
